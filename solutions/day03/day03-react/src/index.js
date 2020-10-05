@@ -15,6 +15,12 @@ const header = (
   </header>
 );
 
+const inputs = ['First Name', 'Last Name', 'Email'];
+const inputsFormatted = inputs.map((input) => 
+<input
+type='text'
+value={input} />);
+
 const submitButton = (
   <button className="submit-button">
     Subscribe
@@ -25,7 +31,7 @@ const main = (
   <main>
     <div className="main-wrapper">
       <p>{signup}</p>
-      {/* <ul>{inputs}</ul> */}
+      <div>{inputsFormatted}</div>
       {submitButton}
     </div>
   </main>
