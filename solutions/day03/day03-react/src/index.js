@@ -16,10 +16,12 @@ const header = (
 );
 
 const inputs = ['First Name', 'Last Name', 'Email'];
-const inputsFormatted = inputs.map((input) => 
+const inputsFormatted = inputs.map((input, index) => 
 <input
+key={index}
 type='text'
-value={input} />);
+value={input} 
+readOnly />);
 
 const submitButton = (
   <button className="submit-button">
