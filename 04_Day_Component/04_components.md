@@ -61,8 +61,9 @@ const getUserInfo = (firstName, lastName, country, title, skills) => {
   )} `
 }
 // When we call this function we need parameters
+const skills = ['HTML', 'CSS', 'JS', 'React']
 console.log(
-  getUserInfo('Asabeneh', 'Yetayeh', 'Finland', 'FullStack Developer')
+  getUserInfo('Asabeneh', 'Yetayeh', 'Finland', 'FullStack Developer', skills)
 )
 ```
 
@@ -87,7 +88,7 @@ class Parent {
   }
 }
 
-const p1 = Parent('Asabeneh', 'Yetayeh', 'Finland', 'FullStack Developer')
+const p1 = new Parent('Asabeneh', 'Yetayeh', 'Finland', 'FullStack Developer')
 
 class Child extends Parent {
   constructor(firstName, lastName, country, title, skills) {
@@ -104,12 +105,14 @@ class Child extends Parent {
   }
 }
 
+const skills = ['HTML', 'CSS', 'JS', 'React']
+
 const child = new Child(
   'Asabeneh',
   'Yetayeh',
   'Finland',
   'FullStack Developer',
-  ['HTML', 'CSS', 'JS', 'React']
+  skills
 )
 ```
 
@@ -495,4 +498,5 @@ ReactDOM.render(<HexaColor />, rootElement)
 ![Hexadecimal colors](../images/hexadecimal_color_exercise.png)
 
 🎉 CONGRATULATIONS ! 🎉
+
 [<< Day 3](../30-Days-Of-React/03_Day_Setting_Up/03_day_setting_up.md) | [Day 5 >>](./05_Day_Props/05_props.md)
