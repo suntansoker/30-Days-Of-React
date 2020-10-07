@@ -15,7 +15,7 @@
 </div>
 </div>
 
-[<< Day 4](../04_Day_Component/04_components.md) | [Day 6 >>]()
+[<< Day 4](../04_Day_Component/04_components.md) | [Day 6 >>](../06_Day_Map_List_Keys/06_map_list_keys.md)
 
 ![30 Days of React banner](../images/30_days_of_react_banner_day_5.jpg)
 
@@ -34,6 +34,8 @@
   - [propTypes](#proptypes)
   - [defaultProps](#defaultprops)
 - [Exercises: Components and Props](#exercises-components-and-props)
+  - [Exercises: Level 1](#exercises-level-1)
+  - [Exercises: Level 2](#exercises-level-2)
 
 # Props
 
@@ -178,7 +180,7 @@ const App = () => {
 }
 
 const rootElement = document.getElementById('root')
-// we render the JSX element using the ReactDOM package
+
 ReactDOM.render(<App />, rootElement)
 ```
 
@@ -236,7 +238,6 @@ const App = () => (
 )
 
 const rootElement = document.getElementById('root')
-// we render the JSX element using the ReactDOM package
 ReactDOM.render(<App />, rootElement)
 ```
 
@@ -300,7 +301,6 @@ const App = () => {
   )
 }
 const rootElement = document.getElementById('root')
-// we render the JSX element using the ReactDOM package
 ReactDOM.render(<App />, rootElement)
 ```
 
@@ -334,7 +334,6 @@ const App = () => {
   )
 }
 const rootElement = document.getElementById('root')
-// we render the JSX element using the ReactDOM package
 ReactDOM.render(<App />, rootElement)
 ```
 
@@ -368,7 +367,6 @@ const App = () => {
   )
 }
 const rootElement = document.getElementById('root')
-// we render the JSX element using the ReactDOM package
 ReactDOM.render(<App />, rootElement)
 ```
 
@@ -524,7 +522,6 @@ const App = () => {
   )
 }
 const rootElement = document.getElementById('root')
-// we render the JSX element using the ReactDOM package
 ReactDOM.render(<App />, rootElement)
 ```
 
@@ -609,7 +606,6 @@ const App = () => {
   )
 }
 const rootElement = document.getElementById('root')
-// we render the JSX element using the ReactDOM package
 ReactDOM.render(<App />, rootElement)
 ```
 
@@ -667,7 +663,6 @@ const App = () => {
   )
 }
 const rootElement = document.getElementById('root')
-// we render the JSX element using the ReactDOM package
 ReactDOM.render(<App />, rootElement)
 ```
 
@@ -821,7 +816,6 @@ const App = () => {
   )
 }
 const rootElement = document.getElementById('root')
-// we render the JSX element using the ReactDOM package
 ReactDOM.render(<App />, rootElement)
 ```
 
@@ -898,7 +892,6 @@ const App = () => {
   )
 }
 const rootElement = document.getElementById('root')
-// we render the JSX element using the ReactDOM package
 ReactDOM.render(<App />, rootElement)
 ```
 
@@ -984,6 +977,7 @@ const Button = ({ text, onClick, style }) => (
   </button>
 )
 
+// CSS styles in JavaScript Object
 const buttonStyles = {
   backgroundColor: '#61dbfb',
   padding: 10,
@@ -1058,7 +1052,6 @@ const App = () => {
   )
 }
 const rootElement = document.getElementById('root')
-// we render the JSX element using the ReactDOM package
 ReactDOM.render(<App />, rootElement)
 ```
 
@@ -1074,8 +1067,18 @@ We will cover propTypes in detail in other section.
 
 # Exercises: Components and Props
 
-1.Create functional components and display the following images
-![Front end](../images/frontend_technologies.png)
+## Exercises: Level 1
+
+1. What is props in a React component ?
+2. How do you access props in React component ?
+3. What data types can we pass as a props to components ?
+4. What is a propTypes
+5. What is a default propTypes
+
+## Exercises: Level 2
+
+1. Create functional components and display the following images
+   ![Front end](../images/frontend_technologies.png)
 
 2.Use functional component to design the following user card.
 
@@ -1091,4 +1094,4 @@ We will cover propTypes in detail in other section.
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 4](../04_Day_Component/04_components.md) | [Day 6 >>]()
+[<< Day 4](../04_Day_Component/04_components.md) | [Day 6 >>](../06_Day_Map_List_Keys/06_map_list_keys.md)
