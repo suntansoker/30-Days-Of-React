@@ -7,7 +7,7 @@ import * as serviceWorker from './serviceWorker';
 const subscribe  = "SUBSCRIBE";
 const signup = "Sign up with your email id to receive news and email updates";
 
-const header = (
+const Header = () => (
   <header>
     <div className="header-wrapper">
       <h1>{subscribe}</h1>
@@ -23,32 +23,32 @@ type='text'
 value={input} 
 readOnly />);
 
-const submitButton = (
+const SubmitButton = () => (
   <button className="submit-button">
     Subscribe
   </button>
 );
 
-const main = (
+const Main = () => (
   <main>
     <div className="main-wrapper">
       <p>{signup}</p>
       <div>{inputsFormatted}</div>
-      {submitButton}
+      <SubmitButton />
     </div>
   </main>
 );
 
-const app = (
+const App = () => (
   <div className='app'>
-    {header}
-    {main}
+    <Header />
+    <Main />
   </div>
 )
 
 const rootElement = document.getElementById('root')
 // we render the JSX element using the ReactDOM package
-ReactDOM.render(app, rootElement)
+ReactDOM.render(<App />, rootElement)
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
