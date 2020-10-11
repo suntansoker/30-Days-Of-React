@@ -4,14 +4,6 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Roboto:300,400,500&display=swap"
-      rel="stylesheet"
-    />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
@@ -32,7 +24,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>30 Days of React-03</title>
+    <title>React App</title>
     <style>
       * {
         box-sizing: border-box;
@@ -55,46 +47,27 @@
       }
       .app{
         text-align: center;
-        margin: auto;
         position: absolute;
         height: 100%;
-        width: 100%;
-        background-color: lightblue;
+        width: 100%; 
       }
-      .header-wrapper{
-        width: 85%;
-        margin: auto;
-        padding: 30px 20px;
-      }
-      .header-wrapper h1{
+      .main-title,
+      .sub-title{
+        margin: 5px;
         font-weight: normal;
       }
-      
-      input{
-        width: 12em;
-        height: 2em;
-        text-align: center;
-        border-radius: 5px;
-        border: none;
-        outline: none;
-        margin: 1em 2em;
-        color: gray;
+      .main-grid{
+        display: grid;
+        grid-template-rows: repeat(4, 100px);
+        grid-template-columns: repeat(8,100px);
+        grid-gap: 2px;
+        justify-content: center;
+        
       }
-      button{
-        width: 18em;
-        height: 2em;
-        color: white;
-        font-weight: bold;
-        background-color: green;
-        border-radius: 5px;
-        border: none;
-        outline: none;
-      }
-      button:hover{
-        cursor: pointer;
-      }
-      button:active{
-        background-color:coral;
+      .main-grid > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     </style>
   </head>
