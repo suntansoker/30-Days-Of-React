@@ -1,7 +1,7 @@
 // index.js
 import React from 'react'
 import ReactDOM from 'react-dom'
-import asabenehImage from './images/asabeneh.jpg'
+import asabenehImage from './images/suntan.jpg'
 
 // Fuction to show month date year
 
@@ -242,14 +242,14 @@ class App extends React.Component {
   
   render() {
     const data = {
-      welcome: 'Welcome to 30 Days Of React',
+      welcome: 'Welcome to Dark/Light Theme',
       title: 'Getting Started React',
       subtitle: 'JavaScript Library',
       author: {
-        firstName: 'Asabeneh ',
-        lastName: 'Yetayeh',
+        firstName: 'Sayantan ',
+        lastName: 'Sarkar',
       },
-      date: 'Oct 7, 2020',
+      date: 'Oct 13, 2020',
     }
     const techs = ['HTML', 'CSS', 'JavaScript']
     const date = new Date()
