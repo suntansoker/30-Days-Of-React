@@ -1,0 +1,8 @@
+.Div{
+  position: absolute;
+  background-color: red;
+  text-align: center;
+  color: white;
+  width: 75px;
+  height: 50px
+}
